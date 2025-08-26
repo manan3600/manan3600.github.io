@@ -1,0 +1,42 @@
+/* Structure */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:url(images/junglebackground.jpg);
+}
+
+#content {
+    background-color: bisque;
+    width:40%;
+    margin:auto;
+    padding:10%;
+    border-radius:5px;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border:1px solid maroon;
+    padding:5px 10px;
+}
+
+th{
+    background-color: rgb(98, 98, 25);
+}
+
+/* Images */
+#giraff {
+    box-shadow: 10px 10px brown;
+    width: 400px;
+}
+
+/* Typography */
+h1 {
+    color: black;
+}
+h2 {
+    color:gray
+
+}
