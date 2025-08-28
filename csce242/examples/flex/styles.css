@@ -17,14 +17,17 @@ body {
     border-radius:5px;
     padding:5px;
 }
+
+
 /* Main Navigation */
 #main-nav ul {
     list-style-type: none;
+    padding-left:0;
 }
 
 #main-nav li {
     border-bottom:2px solid white;
-    padding:10px 0px;
+    padding:5px;
 }
 
 #main-nav li:first-child {
@@ -36,6 +39,11 @@ body {
     padding: 10px 5px;
     display:block;
     text-decoration: none; /* NO UNDERLINES */
+}
+
+#main-nav a:hover {
+    background: white;
+    color:#595302;
 }
 
 
@@ -53,7 +61,31 @@ h1 {
     #content {
         width:70%;
     }
+    /* Columns */
+    .columns {
+        display:flex;
+    }
 
+    /* Main Nav */
+    #main-nav li {
+        flex:1;
+
+    }
+
+    #main-nav li, #main-nav li:first-child {
+        border:none;
+    }
+    
+    #main-nav a {
+        text-align: center;
+        padding:5px;
+    }
+
+    #main-nav a:hover {
+        background: #595302;
+        color: white;
+        border-bottom:1px solid white;
+    }
 
 
 }
