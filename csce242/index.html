@@ -1,23 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>CSCE 242: Manan Patel</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div id="content">
-        <h1>CSCE 242: <strong>Manan Patel</strong></h1>
-        <p>In this course, students will utilize HTML and CSS to design the front end of a website. Then they will use JavaScript to add functionality. Finally, they will learn to use Node.js and server-side JavaScript to store and retrieve data from a server. </p>
-        <img id="github" src="assignments/images/github.png" alt="github"> 
-        <a href="https://github.com/manan3600/manan3600.github.io"> My Github Repo</a>
+  <head>
+    <title>CSCE 242: Manan Patel</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="content">
+      <header id="main-header">
+        <h1>CSCE 242: Manan Patel</h1>
+      </header>
 
-        <h2><b>Assignments</b></h2>
+      <main id="main-content">
+        <h2>Assignments</h2>
 
-        <ol>
-            <li><a href="assignments/01html/index.html"> Basic HTML</a></li>
-            <li><a href="assignments/02css/index.html"> Basic CSS</a></li>
-            <!--Assignment 3 and so on-->
-        </ol>
-        
-    </body>
+        <div id="assignments">
+          <a id="assignment1" href="assignments/01html/index.html">
+             <h3>Assignment 1 – Basic HTML</h3>
+            <img src="assignments/images/basic_html.jpg" alt="Assignment 1 screenshot">
+            <p>
+                 Basic page with headings, paragraphs, images, lists, and a table.</p>
+        </a>
+
+        <a id="assignment2" href="assignments/02css/index.html">
+            <h3>Assignment 2 – Basic CSS</h3>
+            <img src="assignments/images/basic_css.jpg" alt="Assignment 2 screenshot">
+             <p>
+                Applied CSS to style a webpage with a color theme, borders, and background.</p>
+        </a>
+
+        <a id="assignment3" href="#">
+            <h3>Assignment 3 – Page Layout</h3>
+            <img src="images/" alt="Assignment 3 ">
+             <p>Responsive layout with Flexbox and a media query for smaller screens.</p>
+        </a>
+    </div>
+
+
+        <div id="about">
+          <p>In this course, students will utilize HTML and CSS to design the front end of a website.Then they will use JavaScript to add functionality. Finally, they will learn to use Node.js and server-side JavaScript to store and retrieve data from a server.</p>
+          <p>
+            <img id="github" src="assignments/images/github.png" alt="GitHub">
+            <a href="https://github.com/manan3600/manan3600.github.io">My GitHub Repo</a>
+          </p>
+        </div>
+      </main>
+
+      <footer id="main-footer">
+        <p>Footer</p>
+      </footer>
+    </div>
+  </body>
 </html>
