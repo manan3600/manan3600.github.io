@@ -29,6 +29,15 @@ body {
     margin:5px;
 }
 
+.squirrel .columns div {
+    width:30%;
+}
+
+/* Gallery */
+#gallery {
+    flex-wrap: wrap;
+}
+
 /*Images*/
 img {
     max-width:100%;
