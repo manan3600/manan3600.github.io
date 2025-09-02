@@ -18,6 +18,21 @@ body {
     padding:5px;
 }
 
+#main-content section, #main-content aside {
+    padding:5px;
+}
+
+.squirrel {
+    background:#595302;
+    padding:5px;
+    border-radius:5px;
+    margin:5px;
+}
+
+/*Images*/
+img {
+    max-width:100%;
+}
 
 /* Main Navigation */
 #main-nav ul {
@@ -64,6 +79,26 @@ h1 {
     /* Columns */
     .columns {
         display:flex;
+    }
+
+    .one {
+        flex:1;
+    }
+    
+    .two {
+        flex:2;
+    }
+
+    .three {
+        flex:3;
+    }
+
+    .four {
+        flex:4;
+    }
+
+    .five {
+        flex:5;
     }
 
     /* Main Nav */
