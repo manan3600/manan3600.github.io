@@ -1,5 +1,9 @@
+:root {
+    --primary-color:#142601;
+}
+
 body {
-    background: #142601;
+    background: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -16,6 +20,7 @@ body {
     color: white;
     border-radius:5px;
     padding:5px;
+    position: relative;
 }
 
 #main-content section, #main-content aside {
@@ -29,6 +34,21 @@ body {
     margin:5px;
 }
 
+/* Showcase */
+#show {
+    position: relative;
+}
+
+#show p {
+    background:rgba(0, 0, 0, 0.7);
+    color:white;
+    padding:10px;
+    width: fit-content;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
 .squirrel .columns div {
     width:30%;
 }
@@ -36,6 +56,9 @@ body {
 /* Gallery */
 #gallery {
     flex-wrap: wrap;
+    padding: 5px;
+    margin:5px;
+    max-width:100%;
 }
 
 /*Images*/
@@ -44,9 +67,13 @@ img {
 }
 
 /* Main Navigation */
-#main-nav ul {
+nav ul {
     list-style-type: none;
     padding-left:0;
+}
+
+nav a {
+    text-decoration: none; /* NO UNDERLINES */
 }
 
 #main-nav li {
@@ -62,7 +89,6 @@ img {
     color:white;
     padding: 10px 5px;
     display:block;
-    text-decoration: none; /* NO UNDERLINES */
 }
 
 #main-nav a:hover {
@@ -70,8 +96,25 @@ img {
     color:#595302;
 }
 
+#login-nav {
+    position: absolute;
+    top:2.5%;
+    right:2.5%;
+}
 
-/* Typograpgy */
+#login-nav a {
+    color:white;
+}
+
+#login-nav a:hover {
+    border-bottom:1px solid white;
+}
+
+#login-nav li::after {
+    content: "|";
+
+}
+/* Typography */
 h1 {
     text-align: center;
 }
@@ -129,6 +172,10 @@ h1 {
         background: #595302;
         color: white;
         border-bottom:1px solid white;
+    }
+
+    #login-nav li::after {
+    content: "|";
     }
 
 
