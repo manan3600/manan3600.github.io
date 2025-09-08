@@ -15,9 +15,40 @@ body {
     border-radius: 5px;
 }
 
+#as-content, #proj-content {
+    flex-wrap: wrap;
+}
+
+.as-boxes {
+    background-color:  #d5dce4;
+    padding: 2%;
+    margin: 2%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.as-boxes:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.as-boxes a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: bold;
+}
+
+.as-boxes a:hover {
+    text-decoration: underline;
+    color: #e2bf7e;
+}
+
 /* Header */
 #main-header {
-    background: #CCD3D9;
+    background: #264e72;
     color: #1f2937;
     border-radius: 5px;
     padding: 8px;
@@ -38,6 +69,7 @@ h2 {
 /*Image*/
 img {
     max-width:100%;
+    border-radius: 5px;
 }
 
 /* Assignment */
@@ -54,12 +86,12 @@ img {
     color: #1f2937;          
 }
 
-#assignment1:hover, #assignment2:hover, #assignment3:hover #assignment4:hover {
+#assignment1:hover, #assignment2:hover, #assignment3:hover #assignment4:hover #proj1 {
     background: #e2bf7e;     /* highlight on hover */
     transform: translateY(-3px);
 }
 
-#assignment1 img, #assignment2 img, #assignment3 img #assignment4 {
+#assignment1 img, #assignment2 img, #assignment3 img #assignment4, #proj1 {
     width: 300px;
     height:auto;
     object-fit: cover;
