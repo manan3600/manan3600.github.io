@@ -59,7 +59,7 @@ img {
     transform: translateY(-3px);
 }
 
-#assignment1 img, #assignment2 img, #assignment3 img {
+#assignment1 img, #assignment2 img, #assignment3 img #assignment4 {
     width: 300px;
     height:auto;
     object-fit: cover;
