@@ -1,0 +1,63 @@
+:root{
+  --bg:#fff;
+  --text:#111;
+  --muted:#666;
+  --border:#dedede;
+  --shade:#f4f4f4;      /* cards / hero */
+  --accent:#bfbfbf;     /* buttons */
+  --maxw:1100px;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif}
+img{max-width:100%;height:auto;display:block}
+
+/* Layout */
+.wrapper{max-width:var(--maxw);margin:0 auto;padding:1.25rem}
+header.site-header{border-bottom:1px solid var(--border);padding:1rem 0;margin-bottom:1rem}
+.brand{display:flex;align-items:center;gap:.75rem}
+.brand .logo{width:56px;height:56px;border:1px solid var(--border);border-radius:50%;display:grid;place-items:center;color:var(--muted);font-size:.75rem}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+nav a{display:inline-block;padding:.5rem .75rem;border:1px solid var(--border);color:var(--text);text-decoration:none;border-radius:.25rem}
+nav a:is(:hover,:focus){background:var(--shade)}
+
+.header-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+
+/* Sections */
+.section{margin:1.25rem 0;padding:1rem;border:1px solid var(--border);background:var(--bg)}
+.section h2{margin:.25rem 0 1rem 0}
+.lead{color:var(--muted);font-style:italic;margin-top:-.25rem}
+
+/* Cards & grids */
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+@media (max-width: 900px){
+  .grid-4{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width: 700px){
+  .grid-3,.grid-2{grid-template-columns:1fr}
+}
+
+.card{border:1px solid var(--border);background:var(--shade);border-radius:.25rem;padding:.75rem}
+.placeholder{background:var(--shade);border:1px dashed var(--border);height:180px;display:grid;place-items:center;color:var(--muted);font-size:.9rem}
+.placeholder.sm{height:120px}
+.meta{color:var(--muted);font-size:.9rem}
+
+/* Buttons */
+.btn{display:inline-block;padding:.6rem .9rem;border:1px solid var(--border);background:var(--accent);color:var(--text);text-decoration:none;border-radius:.35rem}
+.btn:is(:hover,:focus){filter:brightness(.95)}
+
+/* Table */
+table{width:100%;border-collapse:collapse}
+th,td{border:1px solid var(--border);padding:.6rem;text-align:left}
+th{background:var(--shade)}
+
+/* Footer */
+footer.site-footer{border-top:1px solid var(--border);margin-top:2rem;padding:1rem 0;color:var(--muted);font-size:.95rem}
+.footer-inner{display:flex;gap:1rem;flex-wrap:wrap;justify-content:space-between}
+
+/* Forms (for Contact + Submit Build wireframe) */
+form .field{display:grid;gap:.35rem;margin:.75rem 0}
+input,select,textarea{padding:.65rem;border:1px solid var(--border);border-radius:.25rem;background:var(--bg);color:var(--text)}
+textarea{min-height:140px;resize:vertical}
