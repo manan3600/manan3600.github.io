@@ -73,7 +73,7 @@ img {
 }
 
 /* Assignment */
-#assignment1, #assignment2, #assignment3, #assignment4 {
+#assignment1, #assignment2, #assignment3, #assignment4, #assignment5 {
     display: block;
     background: rgba(255,255,255,0.55);
     border: 2px solid #cfd9e5;
@@ -86,12 +86,12 @@ img {
     color: #1f2937;          
 }
 
-#assignment1:hover, #assignment2:hover, #assignment3:hover #assignment4:hover #proj1 {
+#assignment1:hover, #assignment2:hover, #assignment3:hover #assignment4:hover #assignment5:hover #proj1 {
     background: #e2bf7e;     /* highlight on hover */
     transform: translateY(-3px);
 }
 
-#assignment1 img, #assignment2 img, #assignment3 img #assignment4, #proj1 {
+#assignment1 img, #assignment2 img, #assignment3 img, #assignment4 img,  #proj1 {
     width: 300px;
     height:auto;
     object-fit: cover;
