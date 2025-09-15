@@ -91,7 +91,7 @@ img {
     transform: translateY(-3px);
 }
 
-#assignment1 img, #assignment2 img, #assignment3 img, #assignment4 img,  #proj1 {
+#assignment1 img, #assignment2 img, #assignment3 img, #assignment4 img, #assignment5 img, #proj1 {
     width: 300px;
     height:auto;
     object-fit: cover;
