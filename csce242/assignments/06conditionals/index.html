@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditionals: Manan Patel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Assignment 6</h1>
+    <h2>If Statements</h2>
+
+    <!-- Large screen menu -->
+    <nav class="menu large-menu">
+      <span class="menu-item" data-target="planting">Exercise 1</span>
+      <span class="menu-item" data-target="clock">Exercise 2</span>
+    </nav>
+
+    <!-- Small screen toggle menu -->
+    <div class="small-menu">
+      <span id="menu-toggle">▼</span>
+      <div id="menu-items" class="hidden">
+        <span class="menu-item" data-target="planting">Exercise 1</span>
+        <span class="menu-item" data-target="clock">Exercise 2</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Exercise 1: Planting -->
+    <section id="planting">
+      <h3>How many days has it been since watering your plant?</h3>
+      <input type="range" id="day-slider" min="1" max="12" value="1">
+      <div id="plant-result"></div>
+    </section>
+
+    <!-- Exercise 2: Digital Clock -->
+    <section id="clock" class="hidden">
+      <h3>Our Digital Clock</h3>
+      <p id="time-display"></p>
+    </section>
+  </main>
+
+  <footer>
+    
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

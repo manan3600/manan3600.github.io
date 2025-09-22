@@ -73,33 +73,84 @@ img {
 }
 
 /* Assignment */
-#assignment1, #assignment2, #assignment3, #assignment4, #assignment5 {
-    display: block;
-    background: rgba(255,255,255,0.55);
-    border: 2px solid #cfd9e5;
-    border-radius: 6px;
-    padding: 12px;
-    margin: 8px;
-    width: 320px;
-    text-align: center;
-    text-decoration: none;   
-    color: #1f2937;          
+#assignments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* keeps them centered nicely */
+  gap: 20px;                 /* space between cards */
 }
 
-#assignment1:hover, #assignment2:hover, #assignment3:hover #assignment4:hover #assignment5:hover #proj1 {
-    background: #e2bf7e;     /* highlight on hover */
-    transform: translateY(-3px);
+#assignments a {
+  flex: 1 1 300px;            /* responsive cards */
+  max-width: 320px;           /* don’t get too wide */
+  background: rgba(255,255,255,0.55);
+  border: 2px solid #cfd9e5;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #1f2937;
+  transition: transform 0.3s, background 0.3s;
 }
 
-#assignment1 img, #assignment2 img, #assignment3 img, #assignment4 img, #assignment5 img, #proj1 {
-    width: 300px;
-    height:auto;
-    object-fit: cover;
-    background: #c2c2c2;
-    display: block;
-    margin: 0 auto 10px;
-    border: 1px solid #bfbfbf;
-    border-radius: 4px;
+#assignments a:hover {
+  background: #e2bf7e;
+  transform: translateY(-3px);
+}
+
+#assignments img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto 10px;
+  border: 1px solid #bfbfbf;
+  border-radius: 4px;
+}
+
+/* Project Section */
+#proj-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;   /* keeps projects centered */
+  gap: 20px;                 /* space between project cards */
+  margin-top: 20px;
+}
+
+#proj-content .as-boxes {
+  flex: 1 1 300px;
+  max-width: 320px;
+  background: rgba(255,255,255,0.55); /* same color as assignments */
+  border: 2px solid #cfd9e5;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  transition: transform 0.3s, background 0.3s, box-shadow 0.3s;
+}
+
+#proj-content .as-boxes img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #bfbfbf;
+}
+
+#proj-content .as-boxes:hover {
+  transform: translateY(-3px);
+  background: #e2bf7e;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+#proj-content .as-boxes a {
+  text-decoration: none;
+  color: #1f2937;
+  font-weight: bold;
+}
+
+#proj-content .as-boxes a:hover {
+  text-decoration: underline;
+  color: #264e72;
 }
 
 
