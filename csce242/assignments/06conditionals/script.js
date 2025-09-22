@@ -1,4 +1,4 @@
-// Toggle menu for small screens
+
 const toggleBtn = document.getElementById("menu-toggle");
 const menuItems = document.getElementById("menu-items");
 
@@ -7,7 +7,7 @@ toggleBtn.onclick = () => {
   toggleBtn.textContent = menuItems.classList.contains("hidden") ? "▼" : "▲";
 };
 
-// Menu item click → show section
+
 document.querySelectorAll(".menu-item").forEach(item => {
   item.onclick = () => {
     const target = item.dataset.target;
