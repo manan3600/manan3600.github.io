@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>KeiTruck Hub — Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="brand">
+        <img src="images/kei-truck-logo.png" alt="KeiTruck Hub Logo" class="logo-img">
+        <strong>KeiTruck Hub</strong>
+      </div>
+      <button class="hamburger">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="models.html">Models & Specs</a></li>
+          <li><a href="builds.html">Custom Builds</a></li>
+          <li><a href="importing.html">Importing Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+  <div>
+    <h1>Welcome to KeiTruck Hub</h1>
+    <p>Compact • Efficient • Versatile</p>
+    <a href="models.html" class="btn">Browse Models</a>
+  </div>
+</section>
+
+
+  <!-- Featured Models -->
+  <main class="wrapper">
+    <section class="section">
+      <h2>Featured Models</h2>
+      <div class="grid-3">
+        <article class="card">
+          <img src="images/suzuki-carry.webp" alt="Suzuki Carry">
+          <h3>Suzuki Carry</h3>
+          <p>Reliable workhorse with compact size and great utility.</p>
+        </article>
+        <article class="card">
+          <img src="images/honda-acty.JPG" alt="Honda Acty">
+          <h3>Honda Acty</h3>
+          <p>Efficient, lightweight, and versatile for daily tasks.</p>
+        </article>
+        <article class="card">
+          <img src="images/daihatsu-hijet.jpeg" alt="Daihatsu Hijet">
+          <h3>Daihatsu Hijet</h3>
+          <p>A durable mini truck with plenty of customization options.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    © 2025 KeiTruck Hub — All Rights Reserved
+  </footer>
+
+  <!-- Hamburger Menu Script -->
+  <script>
+    const burger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+    burger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
