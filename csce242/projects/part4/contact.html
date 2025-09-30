@@ -84,23 +84,7 @@
     </div>
   </footer>
 
-  <script>
-    // Burger Menu
-    const burger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
-    burger.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
-    });
+ <script src="script.js"></script>
 
-    // Contact Form Confirmation
-    const contactForm = document.getElementById('contactForm');
-    const contactConfirm = document.getElementById('contactConfirm');
-
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      contactForm.style.display = 'none';
-      contactConfirm.style.display = 'block';
-    });
-  </script>
 </body>
 </html>

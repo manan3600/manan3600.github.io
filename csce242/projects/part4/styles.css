@@ -36,6 +36,16 @@ img {
   padding: 1rem;
 }
 
+.text-overlay {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+
 /* Header */
 header.site-header {
   background: var(--shade);
@@ -98,16 +108,18 @@ nav a:hover {
 /* Hamburger */
 .hamburger {
   display: none;
-  font-size: 2rem;
+  margin-left: auto;
+  font-size: 1.8rem;
   background: none;
   border: none;
   cursor: pointer;
+  color: var(--accent);
 }
 
 /* Hero Section */
 .hero {
   width: 100%;
-  min-height: 350px; /* taller for presence */
+  min-height: 350px; 
   background: url('images/kei-truck-bannner.png') center/cover no-repeat;
   display: flex;
   align-items: center;
@@ -129,6 +141,18 @@ nav a:hover {
   font-size: 1.1rem;
   border-radius: 4px;
 }
+
+.hero-text {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-box {
+  background: rgba(0,0,0,0.5);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
 
 
 /* Sections */
@@ -258,8 +282,12 @@ footer.site-footer {
 
 /* Mobile Nav */
 @media (max-width: 768px) {
+  .hamburger {
+    display: block; 
+  }
+
   nav ul {
-    display: none;
+    display: none; 
     flex-direction: column;
     gap: 0;
     background: var(--shade);
@@ -272,11 +300,6 @@ footer.site-footer {
   }
 
   nav ul.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-    color: var(--accent);
+    display: flex; 
   }
 }
