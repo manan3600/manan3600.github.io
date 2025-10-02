@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Submit Your Build</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-bar">
+      <div class="brand">
+        <img src="images/kei-truck-logo.png" alt="KeiTruck Hub Logo" class="logo-img">
+        <strong>KeiTruck Hub</strong>
+      </div>
+      <button class="hamburger">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="models.html">Models & Specs</a></li>
+          <li><a href="builds.html">Custom Builds</a></li>
+          <li><a href="importing.html">Importing Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrapper">
+    <section class="section">
+      <h1>Submit Your Build</h1>
+      <form id="buildForm">
+        <div class="field">
+         <label for="title">Title</label>
+         <input id="title" type="text" placeholder="e.g., Carry Camper Conversion" required>
+      </div>
+
+      <div class="field">
+        <label for="desc">Description</label>
+        <textarea id="desc" placeholder="Describe your build..." required></textarea>
+      </div>
+
+      <div class="field">
+        <label for="tags">Modification Tags</label>
+        <input id="tags" type="text" placeholder="lift, camper, wheels">
+      </div>
+
+      <div class="field">
+        <label for="photos">Photos</label>
+        <input id="photos" type="file" multiple>
+     </div>
+
+      <div class="field">
+        <label>
+        <input type="checkbox" required> I consent to share this build.
+     </label>
+    </div>
+
+  <button class="btn" type="submit">Submit</button>
+</form>
+
+<!-- Confirmation Message (hidden at first) -->
+<p id="confirmationMessage" class="meta" style="display:none; margin-top:1rem; color:green;">
+  ✅ Thanks for submitting your build! We'll review it soon.
+</p>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper footer-inner">
+      <div>© 2025 KeiTruck Hub</div><div>About | Links | Contact</div>
+    </div>
+  </footer>
+
+  <script>
+    const burger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+    burger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+
+    // Form confirmation simulation
+const buildForm = document.getElementById('buildForm');
+const confirmationMessage = document.getElementById('confirmationMessage');
+
+  buildForm.addEventListener('submit', function(e) {
+  e.preventDefault(); // prevent page reload
+  buildForm.style.display = 'none'; // hide the form
+  confirmationMessage.style.display = 'block'; // show confirmation
+});
+
+  </script>
+</body>
+</html>

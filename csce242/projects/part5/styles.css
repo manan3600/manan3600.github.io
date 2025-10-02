@@ -1,0 +1,305 @@
+:root {
+  --bg: #f2f2f2;    
+  --text: #222;       
+  --muted: #666;         
+  --accent: #4a90e2;    
+  --accent-dark: #2c3e50; 
+  --border: #ccc;         
+  --shade: #ffffff;       
+  --maxw: 1100px;
+}
+
+/* Reset + Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Layout */
+.wrapper {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.text-overlay {
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+
+/* Header */
+header.site-header {
+  background: var(--shade);
+  border-bottom: 2px solid var(--border);
+  padding: 0.75rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand .logo {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.logo-img {
+  height: 130px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  color: var(--text);
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  margin-left: auto;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  min-height: 350px; 
+  background: url('images/kei-truck-bannner.png') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.6);
+}
+
+.hero .btn {
+  background: var(--accent);
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+
+.hero-text {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+.hero-box {
+  background: rgba(0,0,0,0.5);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+
+
+/* Sections */
+.section {
+  background: var(--shade);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin: 1.5rem 0;
+  padding: 1rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: var(--accent-dark);
+}
+
+/* Grid */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Cards */
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--accent-dark);
+}
+
+/* ---------- FORM STYLING ---------- */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.field {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.field label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #333;
+}
+
+.field input[type="text"],
+.field textarea,
+.field input[type="file"] {
+  padding: 0.6rem;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.field input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+button.btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  background: #2c6fbb;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button.btn:hover {
+  background: #1f4e85;
+}
+
+
+/* Footer */
+footer.site-footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Mobile Nav */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; 
+  }
+
+  nav ul {
+    display: none; 
+    flex-direction: column;
+    gap: 0;
+    background: var(--shade);
+    border: 1px solid var(--border);
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    width: 200px;
+    padding: 10px;
+  }
+
+  nav ul.show {
+    display: flex; 
+  }
+}
