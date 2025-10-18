@@ -1,0 +1,42 @@
+[
+  {
+    "_id": 1,
+    "name": "Suzuki Carry",
+    "year": 1999,
+    "engine": "660cc",
+    "drive": "4WD",
+    "transmission": "5-speed manual",
+    "img": "images/suzuki-carry.webp",
+    "description": "Reliable workhorse with compact size and great utility."
+  },
+  {
+    "_id": 2,
+    "name": "Honda Acty",
+    "year": 1997,
+    "engine": "656cc",
+    "drive": "RWD",
+    "transmission": "5-speed manual",
+    "img": "images/honda-acty.JPG",
+    "description": "Efficient, lightweight, and versatile for daily tasks."
+  },
+  {
+    "_id": 3,
+    "name": "Daihatsu Hijet",
+    "year": 2001,
+    "engine": "659cc",
+    "drive": "4WD",
+    "transmission": "5-speed manual",
+    "img": "images/daihatsu-hijet.jpeg",
+    "description": "A durable mini truck with plenty of customization options."
+  },
+  {
+    "_id": 4,
+    "name": "Subaru Sambar",
+    "year": 2003,
+    "engine": "660cc",
+    "drive": "AWD",
+    "transmission": "Automatic",
+    "img": "images/subaru-sambar.jpg",
+    "description": "Compact kei truck with Subaru engineering and reliability."
+  }
+]

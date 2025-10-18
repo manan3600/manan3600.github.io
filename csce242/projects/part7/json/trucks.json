@@ -1,0 +1,82 @@
+[
+  {
+    "_id": 1,
+    "name": "Suzuki Carry",
+    "year": 1999,
+    "engine": "660cc",
+    "drive": "4WD",
+    "transmission": "5-speed manual",
+    "img": "images/suzuki-carry.webp",
+    "description": "Reliable workhorse with compact size and great utility."
+  },
+  {
+    "_id": 2,
+    "name": "Honda Acty",
+    "year": 1997,
+    "engine": "656cc",
+    "drive": "RWD",
+    "transmission": "5-speed manual",
+    "img": "images/honda-acty.JPG",
+    "description": "Efficient, lightweight, and versatile for daily tasks."
+  },
+  {
+    "_id": 3,
+    "name": "Daihatsu Hijet",
+    "year": 2001,
+    "engine": "659cc",
+    "drive": "4WD",
+    "transmission": "5-speed manual",
+    "img": "images/daihatsu-hijet.jpeg",
+    "description": "A durable mini truck with plenty of customization options."
+  },
+  {
+    "_id": 4,
+    "name": "Subaru Sambar",
+    "year": 2003,
+    "engine": "660cc",
+    "drive": "AWD",
+    "transmission": "Automatic",
+    "img": "images/subaru-sambar.jpg",
+    "description": "Compact kei truck with Subaru engineering and reliability."
+  },
+  {
+    "_id": 5,
+    "name": "Mitsubishi Minicab",
+    "year": 1998,
+    "engine": "660cc",
+    "drive": "RWD",
+    "transmission": "5-speed manual",
+    "img": "images/mitsubishi-minicab.jpg",
+    "description": "Economical and easy to maintain with a strong track record."
+  },
+  {
+    "_id": 6,
+    "name": "Mazda Scrum",
+    "year": 2002,
+    "engine": "660cc",
+    "drive": "4WD",
+    "transmission": "5-speed manual",
+    "img": "images/mazda-scrum.jpg",
+    "description": "Mazda’s kei truck with reliability and Suzuki DNA."
+  },
+  {
+    "_id": 7,
+    "name": "Toyota Pixis Van",
+    "year": 2005,
+    "engine": "660cc",
+    "drive": "RWD",
+    "transmission": "Automatic",
+    "img": "images/toyota-pixis.jpg",
+    "description": "Toyota’s practical kei-class vehicle built on Daihatsu’s platform."
+  },
+  {
+    "_id": 8,
+    "name": "Nissan Clipper",
+    "year": 2004,
+    "engine": "660cc",
+    "drive": "4WD",
+    "transmission": "5-speed manual",
+    "img": "images/nissan-clipper.jpg",
+    "description": "Compact kei truck ideal for light hauling and city driving."
+  }
+]
